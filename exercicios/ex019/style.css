@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(91, 166, 223);
+}
+.principal{
+    background-color: rgb(89, 155, 183);
+    text-align: center;
+    color: aliceblue;
+}
+.basico{
+    color: green;
+}
+.inter { 
+    color: rgb(193, 193, 41);
+}
+.avan {
+    color: red;
+}

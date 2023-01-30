@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover  > p {
+            display: block;
+            color: black;
+            background-color: red;
+            width: 250px;
+        }
+        div:hover {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>PASSE O MAUSE ABAIXO</p>
+    <div>
+        Passe o mause aqui ds
+        <p>
+            TEXTO ESCONDIDO
+        </p>
+    </div>
+
+    <p>fim</p>
+</body>
+</html>
