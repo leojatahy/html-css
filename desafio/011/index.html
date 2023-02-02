@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>espaço com astronauta</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        #fundo {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            background-size: cover;
+            background-attachment: fixed;
+            background-image: url('https://raw.githubusercontent.com/gustavoguanabara/html-css/master/desafios/modulo-02/d011/imagens/espaco.jpg');
+            background-position: center center;
+        }
+        #astro {
+            position: absolute;
+
+            height: 400px;
+            width: 400px;
+            background-image: url('https://raw.githubusercontent.com/gustavoguanabara/html-css/master/desafios/modulo-02/d011/imagens/astronauta.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="fundo">
+        <article id="astro">
+
+        </article>
+    </section>
+</body>
+</html>
