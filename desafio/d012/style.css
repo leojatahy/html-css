@@ -29,16 +29,20 @@ section.normal {
     background-color: white;
     color: black;
 }
-section.imge {
+section.imagem {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
-#milton {
+section.imagem > p {
+    width: 350px;
+    background-color: rgba(191, 187, 187, 0.237);
+}
+#Milton {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
-#milton:hover {
+#Milton:hover {
     text-decoration: underline;
     color: aqua;
 }
