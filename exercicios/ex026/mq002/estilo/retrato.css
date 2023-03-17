@@ -3,6 +3,8 @@
 /* Aparelho empe (PORTRAIT) */
 
 body {
-    background: url('../imagens/cev-portrait.jpg');
-    background-color: crimson;
+    background: url("../imagens/cev-portrait.jpg");
+    background-position: bottom center;
+    background-size: 90%;
+
 }
