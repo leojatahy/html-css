@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-rounded" onclick="clickM()">
+            menu
+            </span>
+        <menu id="list">
             <ul>
                 <li><a href="#">opção 1</a></li>
                 <li><a href="#">opção 2</a></li>
@@ -33,5 +37,14 @@
     <footer>
         <p>Site feito por <a href="#">Leo Jatahy</a></p>
     </footer>
+    <script>
+        function clickM() {
+            if (list.style.display == 'block') {
+                list.style.display = 'none'
+            }else {
+                list.style.display ='block'
+            }
+        }
+    </script>
 </body>
 </html>
