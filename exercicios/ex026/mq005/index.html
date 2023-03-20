@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <span id="burguer" class="material-symbols-rounded" onclick="clickM()">
@@ -33,10 +34,9 @@
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsum nostrum quia id assumenda molestias voluptatibus veniam, ratione neque iure incidunt commodi quo nemo corrupti harum facilis dignissimos accusamus repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum adipisci, at tempora consequuntur nesciunt omnis, reprehenderit explicabo eaque possimus fugiat quos, dolores beatae nisi iure eos minus deleniti! Voluptatem, odio?</p>
         </article>     
-        <a href=""></a>  
     </main>
     <footer>
-        <p>Site feito por <a href="#">Leo Jatahy</a></p>
+        <p>Site feito por <a href="https://www.instagram.com/leojatahy/" target="_blank">Leo Jatahy</a></p>
     </footer>
     <script>
         function clickM() {
@@ -46,7 +46,13 @@
                 list.style.display ='block'
             }
         }
-        
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                list.style.display = 'block'
+            } else {
+                list.style.display = 'none'
+            }
+       }
     </script>
 </body>
 </html>
