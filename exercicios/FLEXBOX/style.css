@@ -9,13 +9,19 @@
     height: 500px;
     display: flex;
     background-color: rgb(210, 208, 208);
-    flex-direction: row; /*todo: row, row-reverse, column,column-reverse*/
-    justify-content: center;/* todo:          centralizar        */
-    /* todo: justify-content: flex-start;     alinha pelo inicio */
-    /* todo: justify-content: space-between;  afastamento        */
-    /* todo: justify-content: space-around;   espaços entre eles */
-    /* todo: justify-content: flex-end;       alinha pelo final  */
-    align-items: baseline;
+    flex-direction: row; /*? row, row-reverse, column,column-reverse*/
+   
+    justify-content: center;/* todo centralizar | flex-start;alinha pelo inicio | space-between;  afastamento | space-around;espaços entre eles | flex-end: alinha pelo final*/
+     
+    align-items: baseline;/* todo flex-start: top | flex-end: bottom | center: meio | stretch | esticar todo espaço| baseline: alinha conteúdo |*/
+
+    flex-wrap: wrap; /*todo: caber numa linha */ 
+    /*todo wrap: quebra a linha | wrap-reverse: quebrar para cima | */
+
+    align-content: flex-start;/*todo: alinhar linhas */
+    /*todo flex-start; inicio da linha | flex-end: final | center; centro | space-between: afastar | space-around: ao redor  */
+
+gap: 10px 40px ;/*todo: espaço entre eles| shorthand gap> row-gap e column-gap  */
 }
 div{
     padding: 10px;
@@ -23,13 +29,11 @@ div{
     height:  50px;
     border-radius: 10px;
     text-align: center;   
+    background-color: rgba(212, 109, 233, 0.816)
 }
 .bloco-1 {
     background-color: rgb(144, 202, 238);
 }
 .bloco-2 {
     background-color: rgba(224, 194, 124, 0.832);
-}
-.bloco-3 {
-    background-color: rgba(212, 109, 233, 0.816);
 }
